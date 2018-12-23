@@ -20,6 +20,7 @@ package:
     - website/**
 
 resources:
+  - ${file(resources/description.yml)}
   - ${file(resources/buckets.yml)}
   - ${file(resources/cloudfront-distributions.yml)}
   - ${file(resources/DNS-config.yml)}
