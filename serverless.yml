@@ -1,4 +1,4 @@
-service: sls-s3-cf-react-website
+service: ${self:custom.nm}
 
 custom:
     nm: "ds-labs"
@@ -24,4 +24,3 @@ resources:
   - ${file(resources/cloudfront-distributions.yml)}
   - ${file(resources/DNS-config.yml)}
   - ${file(resources/upload-cmds.yml)}
-
